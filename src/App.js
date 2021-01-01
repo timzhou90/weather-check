@@ -43,9 +43,9 @@ function App() {
   const checkingImage = (weather)=>{
     const temp =  weather.main.temp
 
-    if(temp > 22){
+    if(temp > 20){
       return "App hot"
-    }else if(temp<0){
+    }else if(temp<10){
       return "App cold"
     }else {
 
@@ -69,6 +69,8 @@ function App() {
         <TextBoxBar setQuery={setQuery}  query = {query}  search= {search}/>
         <div className="search-container">
         <QuickDropDown handleSubmit= {handleSubmit}  query = {query}  setQuery= {setQuery}/>
+        <button>temperature</button>
+        <button>air quality</button>
         <DisplayTable weather= {weather} />
         </div>
       </main>
