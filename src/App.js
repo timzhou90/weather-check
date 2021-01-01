@@ -69,8 +69,6 @@ function App() {
         <TextBoxBar setQuery={setQuery}  query = {query}  search= {search}/>
         <div className="search-container">
         <QuickDropDown handleSubmit= {handleSubmit}  query = {query}  setQuery= {setQuery}/>
-        <button>temperature</button>
-        <button>air quality</button>
         <DisplayTable weather= {weather} />
         </div>
       </main>
